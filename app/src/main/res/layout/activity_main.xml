@@ -7,18 +7,31 @@
     tools:context=".MainActivity">
 
 
-
     <Button
         android:id="@+id/Sharing"
         android:layout_width="146dp"
         android:layout_height="54dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="268dp"
         android:layout_weight="100"
         android:text="공유"
         android:textSize="10pt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#72B896"/>
+
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="268dp"
+        android:text="지우기"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#72B896" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
