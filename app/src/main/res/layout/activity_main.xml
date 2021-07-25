@@ -34,4 +34,57 @@
         app:layout_constraintTop_toTopOf="parent"
         android:backgroundTint="#72B896" />
 
+
+    <Button
+        android:id="@+id/Text"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="424dp"
+        android:layout_weight="100"
+        android:text="글씨"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#72B896" />
+
+    <Button
+        android:id="@+id/background"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="424dp"
+        android:layout_weight="100"
+        android:text="배경"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#72B896" />
+
+    <Button
+        android:id="@+id/Size"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="512dp"
+        android:layout_weight="100"
+        android:text="크기"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#72B896" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="512dp"
+        android:layout_weight="100"
+        android:text="초기화"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#72B896" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
