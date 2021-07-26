@@ -8,83 +8,109 @@
 
 
     <Button
-        android:id="@+id/Sharing"
-        android:layout_width="146dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="268dp"
-        android:layout_weight="100"
-        android:text="공유"
-        android:textSize="10pt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#72B896"/>
-
-    <Button
         android:id="@+id/Clear"
         android:layout_width="146dp"
-        android:layout_height="54dp"
+        android:layout_height="0dp"
         android:layout_marginTop="268dp"
+        android:backgroundTint="#72B896"
         android:text="지우기"
         android:textSize="10pt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Function"
+        android:layout_width="95dp"
+        android:layout_height="24dp"
+        android:text="-기능 설정-"
+        android:textColor="#6F7777"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#72B896" />
-
-
-    <Button
-        android:id="@+id/Text"
-        android:layout_width="109dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="424dp"
-        android:layout_weight="100"
-        android:text="글씨"
-        android:textSize="10pt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#72B896" />
-
-    <Button
-        android:id="@+id/background"
-        android:layout_width="109dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="424dp"
-        android:layout_weight="100"
-        android:text="배경"
-        android:textSize="10pt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#72B896" />
+        app:layout_constraintVertical_bias="0.554" />
 
     <Button
         android:id="@+id/Size"
         android:layout_width="109dp"
         android:layout_height="48dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="512dp"
         android:layout_weight="100"
+        android:backgroundTint="#72B896"
         android:text="크기"
         android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <Button
+        android:id="@+id/Text"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_weight="100"
+        android:backgroundTint="#72B896"
+        android:text="글씨"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#72B896" />
+        app:layout_constraintVertical_bias="0.639" />
+
+    <Button
+        android:id="@+id/background"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="116dp"
+        android:layout_weight="100"
+        android:backgroundTint="#72B896"
+        android:text="배경"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Clear"
+        app:layout_constraintVertical_bias="0.038" />
 
     <Button
         android:id="@+id/reset"
         android:layout_width="109dp"
         android:layout_height="48dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginBottom="148dp"
         android:layout_weight="100"
+        android:backgroundTint="#72B896"
         android:text="초기화"
         android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Sharing"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="62dp"
+        android:layout_weight="100"
+        android:backgroundTint="#72B896"
+        android:text="공유"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/Function"
+        app:layout_constraintEnd_toStartOf="@+id/Clear"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#72B896" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
