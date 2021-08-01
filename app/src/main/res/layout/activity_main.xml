@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Text"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintVertical_bias="0.191" />
 
     <Button
         android:id="@+id/Text"
@@ -68,17 +68,16 @@
         android:id="@+id/background"
         android:layout_width="109dp"
         android:layout_height="48dp"
-        android:layout_marginTop="116dp"
         android:layout_weight="100"
         android:backgroundTint="#72B896"
         android:text="배경"
         android:textSize="10pt"
-        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.801"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Clear"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
 
     <Button
         android:id="@+id/reset"
@@ -92,7 +91,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/Sharing"
@@ -112,5 +113,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/notepad_rogo"
+        android:layout_width="349dp"
+        android:layout_height="157dp"
+        android:src="@drawable/notepad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Textbox"
+        android:layout_width="269dp"
+        android:layout_height="89dp"
+        android:background="@drawable/memo_folder"
+        android:hint=" 글을 입력하세요."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
