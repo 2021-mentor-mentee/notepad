@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="test">
+
+        <item>1번</item>
+        <item>2번</item>
+        <item>3번</item>
+
+    </string-array>
+
+    <string-array name="test2">
+
+        <item>4번</item>
+        <item>5번</item>
+        <item>6번</item>
+
+    </string-array>
+
+</resources>
