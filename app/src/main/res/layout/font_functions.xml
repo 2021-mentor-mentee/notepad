@@ -6,11 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".Text">
 
+
+
+
     <TextView
         android:id="@+id/Textbox2"
         android:layout_width="331dp"
         android:layout_height="137dp"
-        android:hint=" 글을 입력하세요."
+        android:text="예시문구입니다."
         android:textSize="15pt"
         android:background="@drawable/memo_folder"
         android:textColor="#6F7777"
