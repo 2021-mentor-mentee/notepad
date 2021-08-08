@@ -11,10 +11,10 @@
         android:id="@+id/Clear"
         android:layout_width="146dp"
         android:layout_height="0dp"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="280dp"
         android:backgroundTint="#72B896"
-        android:textColor="#FFFFFF"
         android:text="지우기"
+        android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.841"
@@ -23,17 +23,17 @@
 
     <TextView
         android:id="@+id/Function"
-        android:layout_width="95dp"
-        android:layout_height="24dp"
+        android:layout_width="106dp"
+        android:layout_height="34dp"
         android:text="-기능 설정-"
         android:textColor="#6F7777"
-        android:textSize="8pt"
+        android:textSize="9pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <Button
         android:id="@+id/Size"
@@ -53,24 +53,24 @@
 
     <Button
         android:id="@+id/Text"
-        android:layout_width="109dp"
-        android:layout_height="48dp"
+        android:layout_width="119dp"
+        android:layout_height="60dp"
         android:layout_weight="100"
         android:backgroundTint="#72B896"
-        android:textColor="#FFFFFF"
         android:text="글씨"
+        android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintVertical_bias="0.701" />
 
     <Button
         android:id="@+id/background"
-        android:layout_width="109dp"
-        android:layout_height="48dp"
+        android:layout_width="119dp"
+        android:layout_height="60dp"
         android:layout_weight="100"
         android:backgroundTint="#72B896"
         android:text="배경"
@@ -78,16 +78,16 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <Button
         android:id="@+id/reset"
         android:layout_width="119dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="68dp"
         android:layout_weight="100"
         android:backgroundTint="#72B896"
         android:text="초기화"
@@ -113,10 +113,10 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toTopOf="@+id/Function"
         app:layout_constraintEnd_toStartOf="@+id/Clear"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/notepad_rogo"
@@ -131,18 +131,20 @@
 
     <EditText
         android:id="@+id/Textbox"
-        android:layout_width="276dp"
-        android:layout_height="105dp"
+        android:layout_width="304dp"
+        android:layout_height="117dp"
         android:background="@drawable/memo_folder"
         android:hint=" 글을 입력하세요."
         android:padding="20dp"
         android:textColorHighlight="#F7DEAD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.228"
+        android:textCursorDrawable="@color/Apricot"
+        android:textSelectHandle="@color/Yolk"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
