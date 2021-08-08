@@ -21,18 +21,41 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Textbox = findViewById(R.id.Textbox);
         sp = getSharedPreferences("sp", MODE_PRIVATE);
         String save = sp.getString("save","");
         Textbox.setText(save);
 
+        //배경 버튼 화면 넘기기 기능 넣기 (오류남;)
+        Button background_bt = (Button)
+        findViewById(R.id.background_bt);
+        background_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,background_screen.class);
+                startActivity(intent);
+            }
+        });
+
+        Button name_background_bt = (Button) findViewById(R.id.background_bt);
+        name_background_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Background.class);
+                startActivity(intent);
+            }
+        });
 
 
 
+        //글씨 버튼 화면 넘기기 기능 넣기
                 Button Text = (Button)
                 findViewById(R.id.Text);
         Text.setOnClickListener(new View.OnClickListener() {
@@ -51,8 +74,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
+
+
+
+    //텍스트 값 저장 기능
     protected void onDestroy(){
         super.onDestroy();
         save(Textbox.getText().toString());
