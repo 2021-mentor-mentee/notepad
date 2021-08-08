@@ -6,14 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Text">
 
-
-
-
     <TextView
         android:id="@+id/Textbox2"
         android:layout_width="331dp"
         android:layout_height="137dp"
-        android:text="예시문구입니다."
+        android:hint=" 글을 입력하세요."
         android:textSize="15pt"
         android:background="@drawable/memo_folder"
         android:textColor="#6F7777"
@@ -23,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.094"
         android:gravity="center" />
+
 
     <TextView
         android:id="@+id/text2"
@@ -124,8 +122,9 @@
     <Button
         android:id="@+id/Color1"
         android:layout_width="30dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:layout_weight="100"
+        android:background="@drawable/selector_button1"
         android:backgroundTint="#FFD8D8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
