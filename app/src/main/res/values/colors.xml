@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="Color_1">#FFD8D8</color>
+    <color name="Color_2">#FAECC5</color>
+    <color name="Color_3">#FAF4C0</color>
+    <color name="Color_4">#E4F7BA</color>
+    <color name="Color_5">#CEFBC9</color>
+    <color name="Color_6">#D4F4FA</color>
+    <color name="Color_7">#D9E5FF</color>
+    <color name="Color_8">#E8D9FF</color>
+    <color name="Color_9">#FFD9FA</color>
+    <color name="Color_10">#FFFFFF</color>
+
+    <color name="Color_11">#FFA7A7</color>
+    <color name="Color_12">#FFE08C</color>
+    <color name="Color_13">#FAED7D</color>
+    <color name="Color_14">#CEF279</color>
+    <color name="Color_15">#B7F0B1</color>
+    <color name="Color_16">#B2EBF4</color>
+    <color name="Color_17">#B2CCFF</color>
+    <color name="Color_18">#D1B2FF</color>
+    <color name="Color_19">#FFB2F5</color>
+    <color name="Color_20">#EAEAEA</color>
+
+    <color name="Color_21">#FF0000</color>
+    <color name="Color_22">#FFBB00</color>
+    <color name="Color_23">#FFE400</color>
+    <color name="Color_24">#ABF200</color>
+    <color name="Color_25">#1DDB16</color>
+    <color name="Color_26">#00D8FF</color>
+    <color name="Color_27">#0054FF</color>
+    <color name="Color_28">#5F00FF</color>
+    <color name="Color_29">#FF00DD</color>
+    <color name="Color_30">#BDBDBD</color>
+
+    <color name="Color_31">#980000</color>
+    <color name="Color_32">#997000</color>
+    <color name="Color_33">#998A00</color>
+    <color name="Color_34">#6B9900</color>
+    <color name="Color_35">#2F9D27</color>
+    <color name="Color_36">#008299</color>
+    <color name="Color_37">#003399</color>
+    <color name="Color_38">#3F0099</color>
+    <color name="Color_39">#990085</color>
+    <color name="Color_40">#5D5D5D</color>
+
+    <color name="Color_41">#670000</color>
+    <color name="Color_42">#664B00</color>
+    <color name="Color_43">#664B00</color>
+    <color name="Color_44">#476600</color>
+    <color name="Color_45">#22741C</color>
+    <color name="Color_46">#005766</color>
+    <color name="Color_47">#002266</color>
+    <color name="Color_48">#2A0066</color>
+    <color name="Color_49">#990085</color>
+    <color name="Color_50">#191919</color>
+
+
+
+
+</resources>

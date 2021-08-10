@@ -790,13 +790,14 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_weight="100"
-        android:backgroundTint="#191919"
+        android:background="@drawable/selector_button2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.895" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
