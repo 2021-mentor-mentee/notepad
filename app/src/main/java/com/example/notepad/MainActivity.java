@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Textbox.setText(save);
         
 
-        //배경 버튼 화면 넘기기 기능 넣기 (오류남;)
+        //배경 버튼 화면 넘기기 기능 넣기
         Button background_bt = (Button)
         findViewById(R.id.background_bt);
         background_bt.setOnClickListener(new View.OnClickListener() {

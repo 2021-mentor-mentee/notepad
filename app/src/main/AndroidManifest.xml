@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".font_functions"></activity>
-
+        <activity android:name=".Background"></activity>
     </application>
 
 </manifest>

@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="202dp"
-        android:layout_height="286dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="172dp"
-        android:text="어라?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="493dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="151dp"
+        android:text="투명도"
+        android:textSize="13pt"
+        app:layout_constraintBottom_toTopOf="@+id/Revert"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="50pt"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="113dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/Revert"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:backgroundTint="#72B896"
+        android:text="되돌리기"
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:backgroundTint="#72B896"
+        android:text="저장"
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
