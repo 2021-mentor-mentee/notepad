@@ -10,7 +10,7 @@
         android:id="@+id/TV_test"
         android:layout_width="331dp"
         android:layout_height="137dp"
-        android:hint=" 글을 입력하세요."
+        android:text="예시 문구"
         android:textSize="15pt"
         android:background="@drawable/memo_folder"
         android:textColor="#6F7777"
@@ -723,7 +723,7 @@
         app:layout_constraintVertical_bias="0.882" />
 
     <Button
-        android:id="@+id/Colo47"
+        android:id="@+id/Color47"
         android:layout_width="30dp"
         android:layout_height="40dp"
         android:layout_weight="100"
