@@ -7,7 +7,7 @@
     tools:context=".Text">
 
     <TextView
-        android:id="@+id/Textbox2"
+        android:id="@+id/TV_test"
         android:layout_width="331dp"
         android:layout_height="137dp"
         android:hint=" 글을 입력하세요."

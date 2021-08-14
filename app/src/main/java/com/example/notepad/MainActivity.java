@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         sp = getSharedPreferences("sp", MODE_PRIVATE);
         String save = sp.getString("save","");
         Textbox.setText(save);
+        
 
         //배경 버튼 화면 넘기기 기능 넣기 (오류남;)
         Button background_bt = (Button)
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         background_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,background_screen.class);
+                Intent intent = new Intent(MainActivity.this,Background.class);
                 startActivity(intent);
             }
         });
@@ -90,3 +91,5 @@ public class MainActivity extends AppCompatActivity {
         editor.commit();
     }
 }
+
+

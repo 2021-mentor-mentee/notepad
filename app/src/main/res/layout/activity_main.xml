@@ -16,7 +16,6 @@
         android:text="지우기"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
-        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.841"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,8 +143,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.228"
-        android:textCursorDrawable="@color/Apricot"
-        android:textSelectHandle="@color/Yolk"/>
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
