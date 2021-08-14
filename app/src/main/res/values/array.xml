@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="test">
+    <string-array name="text">
 
         <item>normal</item>
         <item>italic</item>
 
     </string-array>
 
-    <string-array name="test2">
+    <string-array name="Size">
 
-        <item>4번</item>
-        <item>5번</item>
-        <item>6번</item>
+        <item>5pt</item>
+        <item>10pt</item>
+        <item>15pt</item>
+        <item>20pt</item>
 
     </string-array>
 

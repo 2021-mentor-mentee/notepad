@@ -23,7 +23,7 @@
 
 
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/text"
         android:layout_width="75dp"
         android:layout_height="48dp"
         android:text="폰트"
@@ -36,18 +36,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.332" />
 
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="180dp"
         android:layout_height="52dp"
-        android:entries="@array/test"
+        android:entries="@array/text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.334" />
-
 
     <TextView
         android:id="@+id/Size"
@@ -67,7 +67,7 @@
         android:id="@+id/spinner2"
         android:layout_width="180dp"
         android:layout_height="52dp"
-        android:entries="@array/test2"
+        android:entries="@array/Size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.826"
@@ -119,12 +119,12 @@
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintVertical_bias="0.562" />
 
     <Button
         android:id="@+id/Color1"
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_weight="100"
         android:background="@drawable/selector_button1"
         android:backgroundTint="#FFD8D8"
@@ -133,7 +133,7 @@
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color2"
@@ -146,7 +146,7 @@
         app:layout_constraintHorizontal_bias="0.150"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color3"
@@ -159,7 +159,7 @@
         app:layout_constraintHorizontal_bias="0.250"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color4"
@@ -172,7 +172,7 @@
         app:layout_constraintHorizontal_bias="0.350"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color5"
@@ -185,7 +185,7 @@
         app:layout_constraintHorizontal_bias="0.450"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color6"
@@ -198,7 +198,7 @@
         app:layout_constraintHorizontal_bias="0.550"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color7"
@@ -211,7 +211,7 @@
         app:layout_constraintHorizontal_bias="0.650"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color8"
@@ -224,7 +224,7 @@
         app:layout_constraintHorizontal_bias="0.750"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color9"
@@ -237,7 +237,7 @@
         app:layout_constraintHorizontal_bias="0.850"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/Color10"
@@ -250,7 +250,7 @@
         app:layout_constraintHorizontal_bias="0.950"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602"/>
+        app:layout_constraintVertical_bias="0.642"/>
 
     <Button
         android:id="@+id/Color11"
@@ -263,7 +263,7 @@
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color12"
@@ -276,7 +276,7 @@
         app:layout_constraintHorizontal_bias="0.150"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color13"
@@ -289,7 +289,7 @@
         app:layout_constraintHorizontal_bias="0.250"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color14"
@@ -302,7 +302,7 @@
         app:layout_constraintHorizontal_bias="0.350"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color15"
@@ -315,7 +315,7 @@
         app:layout_constraintHorizontal_bias="0.450"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color16"
@@ -328,7 +328,7 @@
         app:layout_constraintHorizontal_bias="0.550"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color17"
@@ -341,7 +341,7 @@
         app:layout_constraintHorizontal_bias="0.650"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color18"
@@ -354,7 +354,7 @@
         app:layout_constraintHorizontal_bias="0.750"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color19"
@@ -367,7 +367,7 @@
         app:layout_constraintHorizontal_bias="0.850"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/Color20"
@@ -380,7 +380,7 @@
         app:layout_constraintHorizontal_bias="0.950"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652"/>
+        app:layout_constraintVertical_bias="0.702"/>
 
 
     <Button
@@ -394,7 +394,7 @@
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color22"
@@ -407,7 +407,7 @@
         app:layout_constraintHorizontal_bias="0.150"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color23"
@@ -420,7 +420,7 @@
         app:layout_constraintHorizontal_bias="0.250"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color24"
@@ -433,7 +433,7 @@
         app:layout_constraintHorizontal_bias="0.350"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color25"
@@ -446,7 +446,7 @@
         app:layout_constraintHorizontal_bias="0.450"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color26"
@@ -459,7 +459,7 @@
         app:layout_constraintHorizontal_bias="0.550"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color27"
@@ -472,7 +472,7 @@
         app:layout_constraintHorizontal_bias="0.650"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color28"
@@ -485,7 +485,7 @@
         app:layout_constraintHorizontal_bias="0.750"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color29"
@@ -498,7 +498,7 @@
         app:layout_constraintHorizontal_bias="0.850"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <Button
         android:id="@+id/Color30"
@@ -511,7 +511,7 @@
         app:layout_constraintHorizontal_bias="0.950"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702"/>
+        app:layout_constraintVertical_bias="0.762"/>
 
 
     <Button
@@ -525,7 +525,7 @@
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color32"
@@ -538,7 +538,7 @@
         app:layout_constraintHorizontal_bias="0.150"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color33"
@@ -551,7 +551,7 @@
         app:layout_constraintHorizontal_bias="0.250"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color34"
@@ -564,7 +564,7 @@
         app:layout_constraintHorizontal_bias="0.350"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color35"
@@ -577,7 +577,7 @@
         app:layout_constraintHorizontal_bias="0.450"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color36"
@@ -590,7 +590,7 @@
         app:layout_constraintHorizontal_bias="0.550"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color37"
@@ -603,7 +603,7 @@
         app:layout_constraintHorizontal_bias="0.650"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color38"
@@ -616,7 +616,7 @@
         app:layout_constraintHorizontal_bias="0.750"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color39"
@@ -629,7 +629,7 @@
         app:layout_constraintHorizontal_bias="0.850"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/Color40"
@@ -642,7 +642,7 @@
         app:layout_constraintHorizontal_bias="0.950"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752"/>
+        app:layout_constraintVertical_bias="0.822"/>
 
     <Button
         android:id="@+id/Color41"
@@ -655,7 +655,7 @@
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color42"
@@ -668,7 +668,7 @@
         app:layout_constraintHorizontal_bias="0.150"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color43"
@@ -681,7 +681,7 @@
         app:layout_constraintHorizontal_bias="0.250"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color44"
@@ -694,7 +694,7 @@
         app:layout_constraintHorizontal_bias="0.350"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color45"
@@ -707,7 +707,7 @@
         app:layout_constraintHorizontal_bias="0.450"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color46"
@@ -720,7 +720,7 @@
         app:layout_constraintHorizontal_bias="0.550"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Colo47"
@@ -733,7 +733,7 @@
         app:layout_constraintHorizontal_bias="0.650"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color48"
@@ -746,7 +746,7 @@
         app:layout_constraintHorizontal_bias="0.750"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color49"
@@ -759,7 +759,7 @@
         app:layout_constraintHorizontal_bias="0.850"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.882" />
 
     <Button
         android:id="@+id/Color50"
@@ -772,20 +772,7 @@
         app:layout_constraintHorizontal_bias="0.950"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="지정된 색깔 : "
-        android:textSize="12pt"
-        android:textColor="#6F7777"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.891" />
+        app:layout_constraintVertical_bias="0.882"/>
 
     <Button
         android:id="@+id/Color51"
