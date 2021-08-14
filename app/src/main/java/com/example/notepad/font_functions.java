@@ -18,7 +18,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class font_functions extends AppCompatActivity{
 
     static String mainTextColor;
+    String temporaryColor;
     Button btn_color[] = new Button[50];
+    Button btn_revert, btn_save;
     String color[] = new String[50];
     private TextView TV_test;
 
@@ -33,11 +35,14 @@ public class font_functions extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.font_functions);
-        defaultColorSetting();
         TV_test = (TextView)findViewById(R.id.TV_test);
-        textColorChange();
         spinner = (Spinner)findViewById(R.id.spinner);
-        TV_test = (TextView)findViewById(R.id.TV_test);
+        btn_revert = (Button)findViewById(R.id.Revert);
+        btn_save = (Button)findViewById(R.id.Save);
+        defaultColorSetting(); // 변수에 색깔 세팅
+        textColorChange();     // 색깔 버튼을 눌렀을떄 예시 색 적용
+        saveTextColor();       // 지금색을 저장
+        textColorRevert();     // 원래 색으로 되돌리기
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -47,7 +52,6 @@ public class font_functions extends AppCompatActivity{
             }
 
             private Object textColor(TextView tv_test) {
-
                 return null;
             }
 
@@ -56,18 +60,44 @@ public class font_functions extends AppCompatActivity{
 
             }
         });
+
         }
 
-    public void setColorNum(String color){
-        TV_test.setTextColor(Color.parseColor(color));
-        setColor(color);
+    public void saveTextColor(){  // 지금색을 저장
+        btn_revert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainTextColor = temporaryColor;
+            }
+        });
     }
 
-    public void setColor(String colorNum){
-        mainTextColor = colorNum;
+    void textColorChange() {  // 색깔 버튼을 눌렀을떄 예시 색 적용
+        for (int i = 0; i < 50; i++) {
+            int a = i;
+            btn_color[a].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    TV_test.setTextColor(Color.parseColor(color[a]));
+                    temporaryColor = color[a];
+                }
+            });
+        }
     }
 
-    void defaultColorSetting() {
+    void textColorRevert() {  // 원래 색으로 되돌리기
+        btn_revert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainTextColor = temporaryColor;
+                TV_test.setTextColor(Color.parseColor(mainTextColor));
+            }
+        });
+    }
+
+
+
+    void defaultColorSetting() {  // 변수에 색깔 세팅
         btn_color[0] = (Button)findViewById(R.id.Color1); btn_color[1] = (Button)findViewById(R.id.Color2); btn_color[2] = (Button)findViewById(R.id.Color3);
         btn_color[3] = (Button)findViewById(R.id.Color4); btn_color[4] = (Button)findViewById(R.id.Color5); btn_color[5] = (Button)findViewById(R.id.Color6);
         btn_color[6] = (Button)findViewById(R.id.Color7); btn_color[7] = (Button)findViewById(R.id.Color8); btn_color[8] = (Button)findViewById(R.id.Color9);
@@ -99,17 +129,7 @@ public class font_functions extends AppCompatActivity{
         color[37] = "#3F0099"; color[38] = "#990085"; color[39] = "#5D5D5D";
         color[40] = "#670000"; color[41] = "#664B00"; color[42] = "#664B00"; color[43] = "#476600"; color[44] = "#22741C"; color[45] = "#005766"; color[46] = "#002266";
         color[47] = "#2A0066"; color[48] = "#990085"; color[49] = "#191919";
-    }
 
-    void textColorChange() {
-        for (int i = 0; i < 50; i++) {
-            int a = i;
-            btn_color[a].setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    setColorNum(color[a]);
-                }
-            });
-        }
+        temporaryColor = mainTextColor;
     }
 }

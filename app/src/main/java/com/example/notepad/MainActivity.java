@@ -27,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        font_functions ff = new font_functions(); // font_functions 객체화
         Textbox = findViewById(R.id.Textbox);
         sp = getSharedPreferences("sp", MODE_PRIVATE);
         String save = sp.getString("save","");
         Textbox.setText(save);
+        Textbox.setTextColor(Integer.parseInt(ff.mainTextColor)); // 글씨색 적용
+
         
 
         //배경 버튼 화면 넘기기 기능 넣기
