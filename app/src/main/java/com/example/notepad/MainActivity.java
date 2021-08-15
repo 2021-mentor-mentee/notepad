@@ -2,7 +2,9 @@ package com.example.notepad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.AdapterView;
@@ -12,10 +14,13 @@ import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
 
+import static com.example.notepad.font_functions.mainTextColor;
+
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView textbox2;
-    EditText Textbox;
+    static EditText Textbox;
     SharedPreferences sp;
     Button Clear;
 
@@ -32,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         sp = getSharedPreferences("sp", MODE_PRIVATE);
         String save = sp.getString("save","");
         Textbox.setText(save);
-        Textbox.setTextColor(Integer.parseInt(ff.mainTextColor)); // 글씨색 적용
+
 
         
 
@@ -79,7 +84,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Textbox.setTextColor(Color.parseColor(mainTextColor));
+//        try {
+//            Intent intent = getIntent();
+//            String textColor = intent.getExtras().getString("textColor");
+//            Textbox.setTextColor(Color.parseColor(textColor));
+//        } catch (Exception e) {
+//
+//        }
+    }
 
     //텍스트 값 저장 기능
     protected void onDestroy(){

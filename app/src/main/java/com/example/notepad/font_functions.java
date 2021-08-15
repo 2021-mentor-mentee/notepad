@@ -2,6 +2,7 @@ package com.example.notepad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -17,12 +18,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class font_functions extends AppCompatActivity{
 
-    static String mainTextColor;
-    String temporaryColor;
+    static String mainTextColor = "#6F7777";
+    String temporaryColor, nowColor;
     Button btn_color[] = new Button[50];
     Button btn_revert, btn_save;
     String color[] = new String[50];
-    private TextView TV_test;
+    TextView TV_test;
 
     private Spinner spinner;
     private Spinner spiiner2;
@@ -35,19 +36,20 @@ public class font_functions extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.font_functions);
+        defaultColorSetting(); // 변수에 색깔 세팅
         TV_test = (TextView)findViewById(R.id.TV_test);
         spinner = (Spinner)findViewById(R.id.spinner);
         btn_revert = (Button)findViewById(R.id.Revert);
         btn_save = (Button)findViewById(R.id.Save);
-        defaultColorSetting(); // 변수에 색깔 세팅
         textColorChange();     // 색깔 버튼을 눌렀을떄 예시 색 적용
         saveTextColor();       // 지금색을 저장
         textColorRevert();     // 원래 색으로 되돌리기
 
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                TV_test = (TextView) textColor(TV_test);
+//                TV_test = (TextView) textColor(TV_test); 여기떄문에 코드가 동작이 안되서 주석처리해놓음
 
             }
 
@@ -64,10 +66,13 @@ public class font_functions extends AppCompatActivity{
         }
 
     public void saveTextColor(){  // 지금색을 저장
-        btn_revert.setOnClickListener(new View.OnClickListener() {
+        btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mainTextColor = temporaryColor;
+                mainTextColor = nowColor;
+//                Intent intent = new Intent(font_functions.this, MainActivity.class);
+//                intent.putExtra("textColor", mainTextColor);
+//                startActivity(intent);
             }
         });
     }
@@ -79,11 +84,12 @@ public class font_functions extends AppCompatActivity{
                 @Override
                 public void onClick(View view) {
                     TV_test.setTextColor(Color.parseColor(color[a]));
-                    temporaryColor = color[a];
+                    nowColor = color[a];
                 }
             });
         }
     }
+
 
     void textColorRevert() {  // 원래 색으로 되돌리기
         btn_revert.setOnClickListener(new View.OnClickListener() {
