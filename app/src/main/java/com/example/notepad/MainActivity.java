@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textbox2;
     static EditText Textbox;
     SharedPreferences sp;
-    Button Clear;
+    Button Clear, btn_share;
 
 
 
@@ -32,11 +32,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        font_functions ff = new font_functions(); // font_functions 객체화
         Textbox = findViewById(R.id.Textbox);
+        btn_share = (Button)findViewById(R.id.Sharing);
         sp = getSharedPreferences("sp", MODE_PRIVATE);
         String save = sp.getString("save","");
         Textbox.setText(save);
+        shareText(); // 공유하기 기능
 
 
         
@@ -88,13 +89,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Textbox.setTextColor(Color.parseColor(mainTextColor));
-//        try {
-//            Intent intent = getIntent();
-//            String textColor = intent.getExtras().getString("textColor");
-//            Textbox.setTextColor(Color.parseColor(textColor));
-//        } catch (Exception e) {
-//
-//        }
+    }
+
+    public void shareText() {
+        btn_share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Sharing_intent = new Intent(Intent.ACTION_SEND);
+                Sharing_intent.setType("text/plain");
+
+                String Test_Message = Textbox.getText().toString();
+
+                Sharing_intent.putExtra(Intent.EXTRA_TEXT, Test_Message);
+
+                Intent Sharing = Intent.createChooser(Sharing_intent, "공유하기");
+                startActivity(Sharing);
+            }
+        });
     }
 
     //텍스트 값 저장 기능
