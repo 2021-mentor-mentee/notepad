@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textbox2;
     static EditText Textbox;
     SharedPreferences sp;
-    Button Clear, btn_share;
+    Button Clear, btn_share, btn_clear;
 
 
 
@@ -38,9 +38,15 @@ public class MainActivity extends AppCompatActivity {
         String save = sp.getString("save","");
         Textbox.setText(save);
         shareText(); // 공유하기 기능
+        btn_clear = (Button)findViewById(R.id.Clear);
 
+        btn_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Textbox.setText("");
+            }
+        });
 
-        
 
         //배경 버튼 화면 넘기기 기능 넣기
         Button background_bt = (Button)

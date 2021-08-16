@@ -49,7 +49,6 @@ public class font_functions extends AppCompatActivity{
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                TV_test = (TextView) textColor(TV_test); 여기떄문에 코드가 동작이 안되서 주석처리해놓음
 
             }
 
@@ -63,7 +62,7 @@ public class font_functions extends AppCompatActivity{
             }
         });
 
-        }
+    }
 
     public void saveTextColor(){  // 지금색을 저장
         btn_save.setOnClickListener(new View.OnClickListener() {
