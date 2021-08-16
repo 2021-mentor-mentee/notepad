@@ -66,7 +66,7 @@ public class font_functions extends AppCompatActivity{
         }
 
     public void saveTextColor(){  // 지금색을 저장
-        btn_revert.setOnClickListener(new View.OnClickListener() {
+        btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mainTextColor = nowColor;
