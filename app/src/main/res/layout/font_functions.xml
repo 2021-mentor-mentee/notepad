@@ -126,7 +126,7 @@
         android:layout_width="30dp"
         android:layout_height="40dp"
         android:layout_weight="100"
-        android:background="@drawable/selector_button1"
+
         android:backgroundTint="#FFD8D8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -774,18 +774,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.882"/>
 
-    <Button
-        android:id="@+id/Color51"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_weight="100"
-        android:background="@drawable/selector_button2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895" />
+
 
 
 

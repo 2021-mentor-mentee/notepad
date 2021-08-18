@@ -47,10 +47,10 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Text"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.546" />
 
     <Button
         android:id="@+id/Text"
@@ -88,7 +88,7 @@
         android:id="@+id/reset"
         android:layout_width="119dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="64dp"
         android:layout_weight="100"
         android:backgroundTint="#72B896"
         android:text="초기화"
@@ -96,7 +96,7 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
