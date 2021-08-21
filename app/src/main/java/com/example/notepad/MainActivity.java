@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.AdapterView;
@@ -15,6 +16,8 @@ import android.content.Intent;
 import android.widget.TextView;
 
 import static com.example.notepad.font_functions.mainTextColor;
+import static com.example.notepad.font_functions.mainTextSize;
+import static com.example.notepad.font_functions.mainTextStyle;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -94,7 +97,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        setTextOption();
+    }
+
+    public void setTextOption() {
         Textbox.setTextColor(Color.parseColor(mainTextColor));
+        Textbox.setTextSize(mainTextSize);
+        switch (mainTextStyle) {
+            case 0: Textbox.setTypeface(null, Typeface.NORMAL);break;
+            case 1: Textbox.setTypeface(null, Typeface.ITALIC);break;
+            case 2: Textbox.setTypeface(null, Typeface.BOLD);break;
+        }
     }
 
     public void shareText() {

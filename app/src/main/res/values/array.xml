@@ -5,15 +5,16 @@
 
         <item>normal</item>
         <item>italic</item>
+        <item>bord</item>
 
     </string-array>
 
     <string-array name="Size">
 
-        <item>5pt</item>
-        <item>10pt</item>
-        <item>15pt</item>
-        <item>20pt</item>
+        <item>20px</item>
+        <item>30px</item>
+        <item>40px</item>
+        <item>50px</item>
 
     </string-array>
 
