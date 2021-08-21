@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/pixabay">
 
 
     <Button
         android:id="@+id/Clear"
         android:layout_width="146dp"
         android:layout_height="0dp"
-        android:layout_marginTop="280dp"
-        android:backgroundTint="#72B896"
+        android:layout_marginTop="308dp"
+        android:backgroundTint="#FBC02D"
         android:text="지우기"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,22 +27,22 @@
         android:layout_width="106dp"
         android:layout_height="34dp"
         android:text="-기능 설정-"
+        android:textAlignment="center"
         android:textColor="#6F7777"
         android:textSize="9pt"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.576" />
 
     <Button
         android:id="@+id/Size"
         android:layout_width="119dp"
         android:layout_height="60dp"
         android:layout_weight="100"
-        android:backgroundTint="#72B896"
+        android:backgroundTint="#FBC02D"
         android:text="크기"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
@@ -57,7 +58,7 @@
         android:layout_width="119dp"
         android:layout_height="60dp"
         android:layout_weight="100"
-        android:backgroundTint="#72B896"
+        android:backgroundTint="#FBC02D"
         android:text="글씨"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
@@ -73,7 +74,7 @@
         android:layout_width="119dp"
         android:layout_height="60dp"
         android:layout_weight="100"
-        android:backgroundTint="#72B896"
+        android:backgroundTint="#FBC02D"
         android:text="배경"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
@@ -90,7 +91,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="64dp"
         android:layout_weight="100"
-        android:backgroundTint="#72B896"
+        android:backgroundTint="#FBC02D"
         android:text="초기화"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
@@ -102,13 +103,12 @@
     <Button
         android:id="@+id/Sharing"
         android:layout_width="146dp"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:layout_marginStart="49dp"
         android:layout_marginTop="268dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="62dp"
         android:layout_weight="100"
-        android:backgroundTint="#72B896"
+        android:backgroundTint="#FBC02D"
         android:text="공유"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
@@ -117,18 +117,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/notepad_rogo"
-        android:layout_width="349dp"
-        android:layout_height="157dp"
-        android:src="@drawable/notepad"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.476" />
 
     <EditText
         android:id="@+id/Textbox"
@@ -143,8 +132,18 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228"
-        />
+        app:layout_constraintVertical_bias="0.241" />
+
+    <ImageView
+        android:id="@+id/notepad_rogo"
+        android:layout_width="wrap_content"
+        android:layout_height="157dp"
+        android:src="@drawable/Logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
