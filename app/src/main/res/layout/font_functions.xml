@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".font_functions">
+    tools:context=".font_functions"
+    android:background="@color/pixabay">
 
     <TextView
         android:id="@+id/TV_test"
@@ -81,7 +82,7 @@
         android:layout_width="148dp"
         android:layout_height="46dp"
         android:layout_weight="100"
-        android:backgroundTint="#72B896"
+        android:backgroundTint="#FBC02D"
         android:textColor="#FFFFFF"
         android:text="되돌리기"
         android:textSize="10pt"
@@ -97,7 +98,7 @@
         android:layout_width="148dp"
         android:layout_height="46dp"
         android:layout_weight="100"
-        android:backgroundTint="#72B896"
+        android:backgroundTint="#FBC02D"
         android:textColor="#FFFFFF"
         android:text="저장"
         android:textSize="10pt"
