@@ -28,7 +28,6 @@ public class font_functions extends AppCompatActivity{
     String color[] = new String[50];
     TextView TV_test;
     Spinner spinner_font, spinner_size;
-    private TextView textbox2;
 
 
 
