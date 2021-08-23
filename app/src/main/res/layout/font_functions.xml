@@ -28,15 +28,14 @@
         android:layout_width="75dp"
         android:layout_height="48dp"
         android:text="폰트"
-        android:textSize="15pt"
         android:textColor="#6F7777"
+        android:textSize="15pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332" />
-
+        app:layout_constraintVertical_bias="0.335" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -45,10 +44,10 @@
         android:entries="@array/text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/Size"
@@ -64,6 +63,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.449" />
 
+
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="180dp"
@@ -71,11 +71,10 @@
         android:entries="@array/Size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452" />
-
+        app:layout_constraintVertical_bias="0.45" />
 
     <Button
         android:id="@+id/Revert"
@@ -110,17 +109,26 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
         android:text="색깔"
         android:textColor="#6F7777"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="400dp"
+        android:layout_height="290dp"
+        app:srcCompat="@drawable/pixabay_8"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="488dp" />
 
     <Button
         android:id="@+id/Color1"
@@ -775,8 +783,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.882"/>
 
-
-
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        app:srcCompat="@drawable/line_1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
