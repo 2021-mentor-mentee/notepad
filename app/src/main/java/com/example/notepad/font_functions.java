@@ -46,7 +46,7 @@ public class font_functions extends AppCompatActivity{
         saveTextOption();      // 지금상태를 저장
         textColorRevert();     // 원래 색으로 되돌리기
         textStyleChange();     // 예시 글씨스타일 적용
-        textSizeChange();
+        textSizeChange();       // 글씨 사이즈 적용
 
     }
 

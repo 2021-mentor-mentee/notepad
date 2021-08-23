@@ -6,6 +6,18 @@
     android:layout_height="match_parent">
 
 
+    <LinearLayout
+        android:id="@+id/background_layout"
+        android:layout_width="327dp"
+        android:layout_height="239dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
