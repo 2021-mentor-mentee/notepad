@@ -2,30 +2,24 @@ package com.example.notepad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.widget.AdapterView;
 import android.widget.EditText;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
-import android.widget.TextView;
 
 import static com.example.notepad.font_functions.mainTextColor;
 import static com.example.notepad.font_functions.mainTextSize;
 import static com.example.notepad.font_functions.mainTextStyle;
 
-
 public class MainActivity extends AppCompatActivity {
 
-    private TextView textbox2;
-    static EditText Textbox;
+    EditText Textbox;
     SharedPreferences sp;
-    Button Clear, btn_share, btn_clear;
+    Button btn_share, btn_clear, btn_expand;
 
 
 
@@ -37,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Textbox = findViewById(R.id.Textbox);
         btn_share = (Button)findViewById(R.id.Sharing);
+        btn_expand = (Button)findViewById(R.id.btn_expand);
         sp = getSharedPreferences("sp", MODE_PRIVATE);
         String save = sp.getString("save","");
         Textbox.setText(save);
         shareText(); // 공유하기 기능
+        expand(); // 메모장 확장
         btn_clear = (Button)findViewById(R.id.Clear);
 
         btn_clear.setOnClickListener(new View.OnClickListener() {
@@ -98,9 +94,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         setTextOption();
+        getTextFromExpand();
     }
 
-    public void setTextOption() {
+    public void setTextOption() { // 글씨 설정 적용
         Textbox.setTextColor(Color.parseColor(mainTextColor));
         Textbox.setTextSize(mainTextSize);
         switch (mainTextStyle) {
@@ -108,6 +105,24 @@ public class MainActivity extends AppCompatActivity {
             case 1: Textbox.setTypeface(null, Typeface.ITALIC);break;
             case 2: Textbox.setTypeface(null, Typeface.BOLD);break;
         }
+    }
+
+    public void expand() { // 메모 확장
+        btn_expand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+                String value = Textbox.getText().toString();
+                intent.putExtra("textValue", value);
+                startActivity(intent);
+            }
+        });
+    }
+    
+    public void getTextFromExpand() { // 확장화면에서 text값 가져오기
+        Intent intent = getIntent();
+        String value = intent.getStringExtra("textValue");
+        Textbox.setText(value);
     }
 
     public void shareText() {

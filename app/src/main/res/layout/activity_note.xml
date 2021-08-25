@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NoteActivity"
+    android:orientation="vertical"
+    android:background="@color/pixabay">
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/memo_folder"
+        android:hint=" 글을 입력하세요."
+        android:padding="20dp"
+        android:textColorHighlight="#F7DEAD"
+        />
+
+</LinearLayout>
