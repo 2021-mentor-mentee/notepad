@@ -123,14 +123,12 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="400dp"
-        android:layout_height="290dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TV_test"
-        app:layout_constraintVertical_bias="0.971"
+        android:layout_width="392dp"
+        android:layout_height="239dp"
         app:srcCompat="@drawable/pixabay_8"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="5dp" />
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="431dp" />
 
     <Button
         android:id="@+id/Color1"
