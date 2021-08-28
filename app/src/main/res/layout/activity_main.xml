@@ -12,7 +12,7 @@
         android:id="@+id/Clear"
         android:layout_width="146dp"
         android:layout_height="0dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="376dp"
         android:backgroundTint="#FBC02D"
         android:text="지우기"
         android:textColor="#FFFFFF"
@@ -38,12 +38,12 @@
         app:layout_constraintVertical_bias="0.576" />
 
     <Button
-        android:id="@+id/Size"
+        android:id="@+id/end"
         android:layout_width="119dp"
         android:layout_height="60dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
-        android:text="크기"
+        android:text="종료"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +57,7 @@
         android:id="@+id/reset"
         android:layout_width="119dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="108dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
         android:text="초기화"
@@ -117,7 +117,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintVertical_bias="0.724" />
 
     <EditText
         android:id="@+id/Textbox"

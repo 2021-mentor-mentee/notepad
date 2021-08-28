@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText Textbox;
     SharedPreferences sp;
     Button btn_share, btn_clear, btn_expand;
+    private Button end;
 
 
 
@@ -37,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
         Textbox.setText(save);
         shareText(); // 공유하기 기능
         expand(); // 메모장 확장
+        end = (Button)findViewById(R.id.end); //종료 버튼
+
+        end.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
         btn_clear = (Button)findViewById(R.id.Clear);
 
         btn_clear.setOnClickListener(new View.OnClickListener() {
