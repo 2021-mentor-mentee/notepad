@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.576" />
 
     <Button
-        android:id="@+id/e"
+        android:id="@+id/end"
         android:layout_width="119dp"
         android:layout_height="60dp"
         android:layout_weight="100"
@@ -148,8 +148,8 @@
         android:id="@+id/switch_text_off"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="865dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="864dp"
         android:text="OFF"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
