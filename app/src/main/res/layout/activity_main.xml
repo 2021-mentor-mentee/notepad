@@ -12,13 +12,13 @@
         android:id="@+id/Clear"
         android:layout_width="146dp"
         android:layout_height="0dp"
-        android:layout_marginTop="404dp"
+        android:layout_marginTop="312dp"
         android:backgroundTint="#FBC02D"
         android:text="지우기"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,8 +42,9 @@
 
     <Button
         android:id="@+id/end"
-        android:layout_width="119dp"
+        android:layout_width="122dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="76dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
         android:text="종료"
@@ -51,16 +52,14 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Text"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/reset"
-        android:layout_width="119dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="108dp"
+        android:layout_width="124dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="76dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
         android:text="초기화"
@@ -68,24 +67,27 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toEndOf="@+id/end"
+        app:layout_constraintTop_toBottomOf="@+id/background_bt"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/Text"
         android:layout_width="119dp"
         android:layout_height="60dp"
+        android:layout_marginTop="468dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
         android:text="글씨"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/end"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
+        app:layout_constraintVertical_bias="0.029" />
 
     <Button
         android:id="@+id/background_bt"
@@ -98,8 +100,8 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toEndOf="@+id/Text"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.7" />
 
@@ -116,8 +118,11 @@
         android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Clear"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
 
     <EditText
         android:id="@+id/Textbox"
