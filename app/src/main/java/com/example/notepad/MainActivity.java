@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Textbox = findViewById(R.id.Textbox);
         btn_share = (Button)findViewById(R.id.Sharing);
         btn_expand = (Button)findViewById(R.id.btn_expand);
-        sp = getSharedPreferences("sp", MODE_PRIVATE);
+        sp = getSharedPreferences("sp", 0);
         String save = sp.getString("save","");
         Textbox.setText(save);
         shareText(); // 공유하기 기능
@@ -60,17 +60,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        themeColor = ThemeUtil.modLoad(getApplicationContext());
-        ThemeUtil.applyTheme(themeColor);
+//        themeColor = ThemeUtil.modLoad(getApplicationContext());
+//        ThemeUtil.applyTheme(themeColor);
 
-        mod_change_bt = findViewById(R.id.mod_change_bt);
-        mod_change_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ModDialog.class);
-                startActivity(intent);
-            }
-        });
+//        mod_change_bt = findViewById(R.id.mod_change_bt);
+//        mod_change_bt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), ModDialog.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
         //배경 버튼 화면 넘기기 기능 넣기
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         save(Textbox.getText().toString());
     }
     public void save(String s){
-        sp = getSharedPreferences("sp",MODE_PRIVATE);
+        sp = getSharedPreferences("sp",0);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("save",s);
         editor.commit();
