@@ -22,14 +22,17 @@ public class MainActivity extends AppCompatActivity {
     Button btn_share, btn_clear, btn_expand;
     private Button end;
 
+    //다크 모드
+    Button mod_change_bt;
+    String themeColor;
 
 
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Textbox = findViewById(R.id.Textbox);
         btn_share = (Button)findViewById(R.id.Sharing);
         btn_expand = (Button)findViewById(R.id.btn_expand);
@@ -54,6 +57,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Textbox.setText("");
+            }
+        });
+
+        themeColor = ThemeUtil.modLoad(getApplicationContext());
+        ThemeUtil.applyTheme(themeColor);
+
+        mod_change_bt = findViewById(R.id.mod_change_bt);
+        mod_change_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ModDialog.class);
+                startActivity(intent);
             }
         });
 

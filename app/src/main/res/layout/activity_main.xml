@@ -24,14 +24,17 @@
 
     <TextView
         android:id="@+id/Function"
-        android:layout_width="106dp"
+        android:layout_width="0dp"
         android:layout_height="34dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="18dp"
         android:text="-기능 설정-"
         android:textAlignment="center"
         android:textColor="#6F7777"
         android:textSize="9pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mod_change_bt"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -179,10 +182,11 @@
     <ImageView
         android:id="@+id/notepad_rogo"
         android:layout_width="415dp"
-        android:layout_height="104dp"
+        android:layout_height="0dp"
         android:layout_marginTop="28dp"
+        android:layout_marginBottom="255dp"
         android:src="@drawable/memo_long_rogo"
-        app:layout_constraintBottom_toTopOf="@+id/Textbox"
+        app:layout_constraintBottom_toTopOf="@+id/mod_change_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -202,6 +206,22 @@
         app:layout_constraintTop_toTopOf="@+id/Textbox"
         app:layout_constraintVertical_bias="0.657"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/mod_change_bt"
+        android:layout_width="113dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="284dp"
+        android:layout_weight="100"
+        android:backgroundTint="#FBC02D"
+        android:text="모드 변경"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Function"
+        app:layout_constraintTop_toBottomOf="@+id/notepad_rogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

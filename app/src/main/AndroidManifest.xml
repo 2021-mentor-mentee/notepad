@@ -22,6 +22,10 @@
         <activity android:name=".font_functions"></activity>
         <activity android:name=".Background"></activity>
         <activity android:name=".NoteActivity"></activity>
+
+        <activity android:name=".ModDialog"
+            android:theme="@android:style/Theme.Dialog" />
     </application>
+
 
 </manifest>
