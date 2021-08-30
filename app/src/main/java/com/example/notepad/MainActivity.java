@@ -168,14 +168,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //텍스트 값 저장 기능
-    protected void onDestroy(){
+    @Override
+    protected void onDestroy() {
         super.onDestroy();
         save(Textbox.getText().toString());
     }
+
     public void save(String s){
         sp = getSharedPreferences("sp",0);
         SharedPreferences.Editor editor = sp.edit();
+        editor.clear();
         editor.putString("save",s);
         editor.commit();
     }
