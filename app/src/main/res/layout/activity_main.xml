@@ -11,18 +11,18 @@
     <Button
         android:id="@+id/Clear"
         android:layout_width="146dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginBottom="369dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#FBC02D"
         android:text="지우기"
         android:textColor="#FFFFFF"
         android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Function"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintHorizontal_bias="0.849"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Textbox"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Function"
@@ -109,9 +109,6 @@
         android:id="@+id/Sharing"
         android:layout_width="146dp"
         android:layout_height="50dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginBottom="455dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
         android:text="공유"
@@ -119,10 +116,10 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Clear"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516" />
+        app:layout_constraintVertical_bias="0.459" />
 
     <EditText
         android:id="@+id/Textbox"
