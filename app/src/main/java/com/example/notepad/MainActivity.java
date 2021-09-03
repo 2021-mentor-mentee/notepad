@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 import android.view.View;
 import android.widget.Button;
@@ -18,8 +19,7 @@ import static com.example.notepad.font_functions.mainTextStyle;
 public class MainActivity extends AppCompatActivity {
 
     EditText Textbox;
-    SharedPreferences sp;
-    Button btn_share, btn_clear, btn_expand;
+    Button btn_share, btn_clear, btn_expand, save_test, get_test;
     private Button end;
 
     //다크 모드
@@ -36,8 +36,9 @@ public class MainActivity extends AppCompatActivity {
         Textbox = findViewById(R.id.Textbox);
         btn_share = (Button)findViewById(R.id.Sharing);
         btn_expand = (Button)findViewById(R.id.btn_expand);
-        sp = getSharedPreferences("sp", 0);
+        SharedPreferences sp = getSharedPreferences("sp", 0);
         String save = sp.getString("save","");
+        Log.d("불러오기", "불러오기 확인");
         Textbox.setText(save);
         shareText(); // 공유하기 기능
         expand(); // 메모장 확장
@@ -59,19 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 Textbox.setText("");
             }
         });
-
-//        themeColor = ThemeUtil.modLoad(getApplicationContext());
-//        ThemeUtil.applyTheme(themeColor);
-
-//        mod_change_bt = findViewById(R.id.mod_change_bt);
-//        mod_change_bt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), ModDialog.class);
-//                startActivity(intent);
-//            }
-//        });
-
 
         //배경 버튼 화면 넘기기 기능 넣기
         Button background_bt = (Button)
@@ -96,8 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //글씨 버튼 화면 넘기기 기능 넣기
-                Button Text = (Button)
-                findViewById(R.id.Text);
+        Button Text = (Button) findViewById(R.id.Text);
         Text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,6 +108,16 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         setTextOption();
         getTextFromExpand();
+        SharedPreferences sp = getSharedPreferences("sp", 0);
+        String save = sp.getString("save","");
+        Log.d("불러오기", "불러오기 확인");
+        Textbox.setText(save);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        save(Textbox.getText().toString());
     }
 
     public void setTextOption() { // 글씨 설정 적용
@@ -168,18 +165,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        save(Textbox.getText().toString());
-    }
 
     public void save(String s){
-        sp = getSharedPreferences("sp",0);
+        SharedPreferences sp = getSharedPreferences("sp", 0);
         SharedPreferences.Editor editor = sp.edit();
         editor.clear();
         editor.putString("save",s);
         editor.commit();
+        Log.d("저장", "저장기능 확인");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        save(Textbox.getText().toString());
     }
 }
 
