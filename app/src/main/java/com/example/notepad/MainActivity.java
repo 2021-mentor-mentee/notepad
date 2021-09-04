@@ -19,7 +19,7 @@ import static com.example.notepad.font_functions.mainTextStyle;
 public class MainActivity extends AppCompatActivity {
 
     EditText Textbox;
-    Button btn_share, btn_clear, btn_expand, save_test, get_test;
+    Button btn_share, btn_clear, btn_expand;
     private Button end;
 
     //다크 모드
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Textbox = findViewById(R.id.Textbox);
         btn_share = (Button)findViewById(R.id.Sharing);
         btn_expand = (Button)findViewById(R.id.btn_expand);
-        SharedPreferences sp = getSharedPreferences("sp", 0);
+        SharedPreferences sp = getSharedPreferences("file", 0);
         String save = sp.getString("save","");
         Log.d("불러오기", "불러오기 확인");
         Textbox.setText(save);
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         setTextOption();
         getTextFromExpand();
-        SharedPreferences sp = getSharedPreferences("sp", 0);
+        SharedPreferences sp = getSharedPreferences("file", 0);
         String save = sp.getString("save","");
         Log.d("불러오기", "불러오기 확인");
         Textbox.setText(save);
@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 String value = Textbox.getText().toString();
                 intent.putExtra("textValue", value);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -167,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void save(String s){
-        SharedPreferences sp = getSharedPreferences("sp", 0);
+        SharedPreferences sp = getSharedPreferences("file", 0);
         SharedPreferences.Editor editor = sp.edit();
         editor.clear();
         editor.putString("save",s);
