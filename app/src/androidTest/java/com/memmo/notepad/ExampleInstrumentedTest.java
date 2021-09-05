@@ -1,4 +1,4 @@
-package com.example.notepad;
+package com.memmo.notepad;
 
 import android.content.Context;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.notepad">
+    package="com.memmo.notepad">
 
     <application
         android:allowBackup="true"
@@ -10,18 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".Text"
+            android:name="com.memmo.notepad.Text"
             android:exported="true" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.memmo.notepad.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".font_functions"></activity>
-        <activity android:name=".Background"></activity>
-        <activity android:name=".NoteActivity"></activity>
+        <activity android:name="com.memmo.notepad.font_functions"></activity>
+        <activity android:name="com.memmo.notepad.Background"></activity>
+        <activity android:name="com.memmo.notepad.NoteActivity"></activity>
 
     </application>
 

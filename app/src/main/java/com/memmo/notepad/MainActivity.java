@@ -1,4 +1,4 @@
-package com.example.notepad;
+package com.memmo.notepad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,9 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-import static com.example.notepad.font_functions.mainTextColor;
-import static com.example.notepad.font_functions.mainTextSize;
-import static com.example.notepad.font_functions.mainTextStyle;
+import static com.memmo.notepad.font_functions.mainTextColor;
+import static com.memmo.notepad.font_functions.mainTextSize;
+import static com.memmo.notepad.font_functions.mainTextStyle;
 
 public class MainActivity extends AppCompatActivity {
 
