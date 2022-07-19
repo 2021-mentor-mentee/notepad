@@ -1,212 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pixabay"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/Clear"
-        android:layout_width="146dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#FBC02D"
-        android:text="지우기"
-        android:textColor="#FFFFFF"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toTopOf="@+id/Function"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Textbox"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/Function"
-        android:layout_width="0dp"
-        android:layout_height="34dp"
-        android:text="-기능 설정-"
-        android:textAlignment="center"
-        android:textColor="#6F7777"
-        android:textSize="9pt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
-
-    <Button
-        android:id="@+id/end"
-        android:layout_width="122dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="76dp"
-        android:layout_weight="100"
-        android:backgroundTint="#FBC02D"
-        android:text="종료"
-        android:textColor="#FFFFFF"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.238"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/background_bt"
-        app:layout_constraintVertical_bias="0.984" />
-
-    <Button
-        android:id="@+id/reset"
-        android:layout_width="124dp"
-        android:layout_height="61dp"
-        android:layout_marginBottom="76dp"
-        android:layout_weight="100"
-        android:backgroundTint="#FBC02D"
-        android:text="초기화"
-        android:textColor="#FFFFFF"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
-        app:layout_constraintStart_toEndOf="@+id/end"
-        app:layout_constraintTop_toBottomOf="@+id/background_bt"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/Text"
-        android:layout_width="119dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="468dp"
-        android:layout_weight="100"
-        android:backgroundTint="#FBC02D"
-        android:text="글씨"
-        android:textColor="#FFFFFF"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toTopOf="@+id/end"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
-
-    <Button
-        android:id="@+id/background_bt"
-        android:layout_width="119dp"
-        android:layout_height="60dp"
-        android:layout_weight="100"
-        android:backgroundTint="#FBC02D"
-        android:text="배경"
-        android:textColor="#FFFFFF"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
-        app:layout_constraintStart_toEndOf="@+id/Text"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
-
-    <Button
-        android:id="@+id/Sharing"
-        android:layout_width="146dp"
-        android:layout_height="50dp"
-        android:layout_weight="100"
-        android:backgroundTint="#FBC02D"
-        android:text="공유"
-        android:textColor="#FFFFFF"
-        android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Clear"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459" />
-
-    <EditText
-        android:id="@+id/Textbox"
-        android:layout_width="304dp"
-        android:layout_height="117dp"
-        android:background="@drawable/memo_folder"
-        android:hint=" 글을 입력하세요."
-        android:padding="20dp"
-        android:singleLine="true"
-        android:textColorHighlight="#F7DEAD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241" />
-
-
-    <TextView
-        android:id="@+id/switch_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="125dp"
-        android:text="ON"
-        android:textSize="20dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/switch1" />
-
-    <TextView
-        android:id="@+id/switch_text_off"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="864dp"
-        android:text="OFF"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnknownIdInLayout" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="868dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="16dp"
-        android:minHeight="48dp"
-        android:switchMinWidth="75dp"
-        android:text=""
-        android:textOff=""
-        android:textOn=""
-        android:thumb="@drawable/switch_thumb_selector"
-        android:track="@drawable/switch_track_selector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/switch_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/notepad_rogo"
-        android:layout_width="415dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="99dp"
-        android:layout_marginTop="27dp"
-        android:src="@drawable/memo_long_rogo"
-        app:layout_constraintBottom_toTopOf="@+id/Textbox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_expand"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="452dp"
-        android:background="@drawable/expand_note"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="@+id/Textbox"
-        app:layout_constraintTop_toTopOf="@+id/Textbox"
-        app:layout_constraintVertical_bias="0.657"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/notepad_rogo"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:src="@drawable/memo_long_rogo" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="295dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+ㅈㅂ
+        <EditText
+            android:id="@+id/Textbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/memo_folder"
+            android:hint=" 글을 입력하세요."
+            android:padding="20dp"
+            android:singleLine="true"
+            android:textColorHighlight="#F7DEAD" />
+
+        <Button
+            android:id="@+id/btn_expand"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/expand_note"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Sharing"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#FBC02D"
+            android:text="공유"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FBC02D"
+            android:text="지우기"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+                android:id="@+id/Function"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="-기능 설정-"
+                android:textAlignment="center"
+                android:textColor="#6F7777"
+                android:textSize="9pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Text"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FBC02D"
+                android:text="글씨"
+                android:textColor="#FFFFFF"
+                android:textSize="10pt" />
+
+            <Button
+                android:id="@+id/background_bt"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FBC02D"
+                android:text="배경"
+                android:textColor="#FFFFFF"
+                android:textSize="10pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#FBC02D"
+            android:text="초기화"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FBC02D"
+            android:text="종료"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/switch_text"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="125dp"-->
+<!--        android:text="ON"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintBaseline_toBaselineOf="@+id/switch1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/switch1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/switch_text_off"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="112dp"-->
+<!--        android:layout_marginTop="672dp"-->
+<!--        android:text="OFF"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="UnknownIdInLayout" />-->
+
+<!--    <Switch-->
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="156dp"-->
+<!--        android:layout_marginTop="868dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:switchMinWidth="75dp"-->
+<!--        android:text=""-->
+<!--        android:textOff=""-->
+<!--        android:textOn=""-->
+<!--        android:thumb="@drawable/switch_thumb_selector"-->
+<!--        android:track="@drawable/switch_track_selector"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/switch_text"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+
+
+
+
+</LinearLayout>

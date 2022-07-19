@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
+import static com.memmo.notepad.Background.mainLinearLayoutColor;
 import static com.memmo.notepad.font_functions.mainTextColor;
 import static com.memmo.notepad.font_functions.mainTextSize;
 import static com.memmo.notepad.font_functions.mainTextStyle;
@@ -107,11 +108,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         setTextOption();
+        setBackground();
         getTextFromExpand();
         SharedPreferences sp = getSharedPreferences("file", 0);
         String save = sp.getString("save","");
         Log.d("불러오기", "불러오기 확인");
         Textbox.setText(save);
+    }
+
+        private void setBackground() { // 글씨 뒤에 백그라운드 적용
+        Textbox.setBackgroundColor(Color.parseColor(mainLinearLayoutColor));
     }
 
     @Override

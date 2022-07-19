@@ -5,17 +5,34 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".NoteActivity"
-    android:orientation="vertical"
-    android:background="@color/pixabay">
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/et_note"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/memo_folder"
-        android:hint=" 글을 입력하세요."
-        android:padding="20dp"
-        android:textColorHighlight="#F7DEAD"
-        />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_circle"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="캡 쳐"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="575dp"
+            android:background="@drawable/note_circle" />
+
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/memo_folder"
+            android:hint=" 글을 입력하세요."
+            android:padding="20dp"
+            android:textColorHighlight="#F7DEAD" />
+
+    </FrameLayout>
 
 </LinearLayout>

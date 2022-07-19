@@ -82,15 +82,15 @@
         android:layout_height="46dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
-        android:textColor="#FFFFFF"
         android:text="되돌리기"
+        android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
         android:id="@+id/Save"
@@ -98,15 +98,15 @@
         android:layout_height="46dp"
         android:layout_weight="100"
         android:backgroundTint="#FBC02D"
-        android:textColor="#FFFFFF"
         android:text="저장"
+        android:textColor="#FFFFFF"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintHorizontal_bias="0.885"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
         android:layout_width="74dp"
@@ -116,22 +116,22 @@
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.559" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="392dp"
-        android:layout_height="239dp"
+        android:layout_width="400dp"
+        android:layout_height="190dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:layout_constraintVertical_bias="0.623"
-        app:srcCompat="@drawable/pixabay_8"
+        app:layout_constraintVertical_bias="0.589"
+        app:srcCompat="@drawable/font_functions_bg"
         tools:ignore="MissingConstraints" />
 
     <Button

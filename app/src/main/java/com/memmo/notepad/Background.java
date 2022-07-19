@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Background extends AppCompatActivity {
 
-    static String mainLinearLayoutColor = "white";
+    static String mainLinearLayoutColor = "#FFFFFFFF";
     Button btn_revert, btn_save;
     LinearLayout background_layout;
     Button btn_color[] = new Button[50];

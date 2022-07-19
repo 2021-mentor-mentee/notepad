@@ -20,10 +20,10 @@
 
     <TextView
         android:id="@+id/Size"
-        android:layout_width="120dp"
-        android:layout_height="52dp"
+        android:layout_width="117dp"
+        android:layout_height="40dp"
         android:text="사이즈"
-        android:textSize="40dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.137"
@@ -45,16 +45,16 @@
 
     <TextView
         android:id="@+id/text2"
-        android:layout_width="88dp"
-        android:layout_height="52dp"
-        android:text="폰트"
-        android:textSize="40dp"
+        android:layout_width="151dp"
+        android:layout_height="46dp"
+        android:text="폰트 스타일"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.343" />
 
     <Button
         android:id="@+id/Revert"
