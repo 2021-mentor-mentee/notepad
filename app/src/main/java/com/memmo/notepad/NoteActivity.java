@@ -15,11 +15,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import static com.memmo.notepad.Background.mainLinearLayoutColor;
-import static com.memmo.notepad.font_functions.mainTextColor;
-import static com.memmo.notepad.font_functions.mainTextSize;
-import static com.memmo.notepad.font_functions.mainTextStyle;
+import static com.memmo.notepad.font_functions.main_text_color;
+import static com.memmo.notepad.font_functions.main_text_size;
+import static com.memmo.notepad.font_functions.main_text_style;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -28,7 +29,7 @@ import java.io.IOException;
 public class NoteActivity extends AppCompatActivity {
 
     EditText et_note;
-    Button btn_circle;
+    AppCompatButton btn_circle;
     int a = 0;
 
     private SharedPreferences preferences;
@@ -38,7 +39,7 @@ public class NoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
         et_note = (EditText) findViewById(R.id.et_note);
-        btn_circle = (Button) findViewById(R.id.btn_circle);
+        btn_circle = findViewById(R.id.btn_circle);
         textSetting();// 메모내용 가져와 값 세팅
         backgroundSetting();// 메모색깔 가져와 값 세팅
         onClick();
@@ -53,9 +54,9 @@ public class NoteActivity extends AppCompatActivity {
         String value = intent.getStringExtra("textValue");
         et_note.setText(value);
         // 글씨 속성 적용
-        et_note.setTextColor(Color.parseColor(mainTextColor));
-        et_note.setTextSize(mainTextSize);
-        switch (mainTextStyle) {
+        et_note.setTextColor(Color.parseColor(main_text_color));
+        et_note.setTextSize(main_text_size);
+        switch (main_text_style) {
             case 0:
                 et_note.setTypeface(null, Typeface.NORMAL);
                 break;

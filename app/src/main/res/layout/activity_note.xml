@@ -12,16 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_circle"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:text="캡 쳐"
             android:textSize="25dp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:layout_marginLeft="245dp"
-            android:layout_marginTop="575dp"
+            android:layout_marginLeft="283dp"
+            android:layout_marginTop="530dp"
             android:background="@drawable/note_circle" />
 
         <EditText

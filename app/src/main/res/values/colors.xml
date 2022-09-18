@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
+    <color name="circle_color">#FFEB3B</color>
+
     <color name="Yellow_900">#F57F17</color>
     <color name="Amber_700">#FFA000</color>
     <color name="Goldenrod">#DAA520</color>
